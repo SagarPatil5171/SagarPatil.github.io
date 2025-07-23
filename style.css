@@ -1,0 +1,81 @@
+/* Base Reset and Typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #005792;
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Main Content */
+main {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+main h2 {
+  color: #005792;
+  margin-bottom: 1rem;
+}
+
+main p, main li {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #ddd;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 2rem;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}
